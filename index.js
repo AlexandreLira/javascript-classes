@@ -1,12 +1,12 @@
 class Car {
 
-    static alert=true
+    static alert = true
 
     constructor({
-        color, 
-        brand, 
+        color,
+        brand,
         model
-    }){
+    }) {
         this.color = color
         this.model = model
         this.brand = brand
@@ -17,7 +17,7 @@ class Car {
     }
 
 
- info(){
+    info() {
         console.log('+-----------------------------')
         console.log('| Color....: ' + this.color)
         console.log('| Model....: ' + this.model)
@@ -25,33 +25,33 @@ class Car {
         console.log('| IsOn.....: ' + this.isOn)
         console.log('| Km.......: ' + this.km)
         console.log('| Fuel.....: ' + this.fuel)
-      
+
     }
 
-    turnOn(){
+    turnOn() {
         this.isOn = true
     }
-    turnOff(){
+    turnOff() {
         this.isOn = false
     }
 
-    set setFuel(value){
+    set setFuel(value) {
         this.fuel = value
     }
 
-    get getFuel(){
+    get getFuel() {
         return this.fuel
     }
 }
 
 let car1 = new Car({
-    color: 'red' ,
+    color: 'red',
     brand: 'tesla',
     model: 'Model S'
 })
 
 let car2 = new Car({
-    color: 'blue' ,
+    color: 'blue',
     brand: 'fiat',
     model: 'Fiat Argo'
 })
